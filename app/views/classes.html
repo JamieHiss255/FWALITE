@@ -9,21 +9,23 @@
             </div>
             <p>We offer a variety of classes for pole, aerial, dance and even conditioning and flexibility! Take a look at the descriptions of our classes below and see what inspires you.</p>
             <p>Please take note that our leveled (non-introductory) and specialized choreography classes require a class package to in order to sign-up; there are no drop-ins for these classes! Classes that allow drop-ins are signified below with an * astrisk.</p>
-            <p>To sign up for our classes, purchase packages, or get a full view of our schedule for this session, please take a look at our MINDBODY page by clicking the button below.</p>
-            <img class="mx-auto d-block" style="border:none;" src="/app/images/API-download-white.png"/>
+            <p class="text-center">To sign up for our classes, purchase packages, or get a full view of our schedule for this session, please take a look at our MINDBODY page by clicking the button below.</p>
+            <img class="mx-auto d-block mb-2" style="border:none;" ng-click="vm.navigateToMindBody()" src="/app/images/API-download-white.png"/>
       <button class="btn btn-default mx-auto d-block mb-1" ng-click="vm.navigateToMindBody()">Sign up for our classes on MINDBODY!</button>
-      <div id="mbo-mobile-apps">
-          <p>MINDBODY also offers mobile apps that you can use to view and sign up for our classes. Download the app for your platform, and you can search for "Fort Wayne Aerial" in the app to view and sign up for our classes. </p>
-          <a href="https://itunes.apple.com/us/app/mindbody-book-fitness-classes-yoga-and-wellness/id689501356?mt=8" style="display:inline-block;overflow:hidden;background:url(//linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg) no-repeat;width:135px;height:40px;background-size:contain;"></a><br />
-          <a href='https://play.google.com/store/apps/details?id=com.mindbodyonline.connect&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style="max-width:160px; border:none;" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
-      </div>
       <hr />
       <div class="class-description mb-1 p-1" data-ng-repeat="class in vm.classes">
-          <div class="col-9">
-              <h5>{{class.name}}</h5>
-              <p>{{class.description}}</p>
-              <hr />
-          </div>
+          <div class="col-12 col-md-9 mx-auto d-block">
+          <div class="card">
+            <div class="card-header text-center">
+               <h5>{{class.name}}</h5>
+            </div>
+            <div class="card-block">
+                <p class="card-text">{{class.description}}</p>
+            </div>
+        </div>
+        <div class="mx-auto d-block mb-1 mt-2 text-center" aria-hidden="true">&bull;&bull;&bull;</div>
+
+        </div>
       </div>
     </div>
 </div>

@@ -22,7 +22,7 @@ angular
         .when('/', {
             templateUrl: 'app/views/main.html',
             controller: 'HomeController',
-            controllerAs: 'home'
+            controllerAs: 'vm'
         })
         .when('/about', {
             templateUrl: 'app/views/about.html',
@@ -37,17 +37,17 @@ angular
         .when('/faqs', {
             templateUrl: 'app/views/faqs.html',
             controller: 'FAQController',
-            controllerAs: 'faqs'
+            controllerAs: 'vm'
         })
         .when('/parties', {
             templateUrl: 'app/views/parties.html',
             controller: 'PartiesController',
-            controllerAs: 'parties'
+            controllerAs: 'vm'
         })
         .when('/schedule', {
             templateUrl: 'app/views/schedule.html',
             controller: 'ScheduleController',
-            controllerAs: 'schedule'
+            controllerAs: 'vm'
           })
           .when('/carousel', {
               templateUrl: 'app/views/carousel.html',

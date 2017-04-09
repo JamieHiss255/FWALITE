@@ -12,10 +12,6 @@ hr {
 }
 
 
-.mainCarouselImage {
-}
-
-
 #carousel-holder {
   background: linear-gradient(to right, #24123d, #412070);
     overflow-x:hidden; 
@@ -28,6 +24,9 @@ hr {
 #main-content {
   background-color: #7d49c6;
 }
+    #main-content img {
+    max-width:200px;
+  }
 
   #main-content h1 {
     color: white;
@@ -45,11 +44,19 @@ hr {
     border-style: solid;
     border-width: 5px;
     border-color: #282828;
-    max-width:800px;
   }
 
   #main-content li {
     color: #d8c5e5;
+  }
+
+  #main-content .class-description p{
+    color: #282828;
+  }
+
+    #main-content .card-header{
+    background-color: #282828;
+    color: white;
   }
 
   #instructor-list .card-deck{
@@ -63,12 +70,6 @@ hr {
       #instructor-list .card-title{
       color:white;
   }
-
-
-
-
-.class-description {
-}
 
 #footer {
   background-color: #282828;
@@ -84,6 +85,11 @@ hr {
 .btn-default {
   background-color: #282828;
   color: #d8c5e5;
+  cursor:pointer;
+}
+
+.btn-default:hover {
+  color:white;
 }
 
 .fa {
@@ -99,14 +105,17 @@ hr {
 }
 
 #map {
-  height: 300px;
-  width: 600px;
   border-style: solid;
   overflow:hidden;
+    height: 300px;
+  width: 600px;
 }
 
-#mbo-mobile-apps{
-  display:none;  
+
+@media (min-width: 769px){
+    #main-content img {
+    max-width:800px;
+  }
 }
 
 /*hiding facebook blurb*/
@@ -140,7 +149,11 @@ hr {
 }
 
 /*tablets*/
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+#main-content h1 {
+  font-size: 30px; 
+}
+
   .navbar-wrapper .navbar {
     border-radius: 4px;
   }
@@ -150,8 +163,8 @@ hr {
   }
 
   #mainCarousel .carousel-item img {
-    max-width: 800px;
-    height:400px;
+    max-width: 600px;
+    height:300px;
   }
 
     #main-content img {
@@ -162,20 +175,23 @@ hr {
   display:block;  
 }
 
-
 }
 
 /*phones*/
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
 #main-content h1 {
   font-size: 25px; 
+}
+
+#main-content h3 {
+  font-size: 20px; 
 }
 
     #main-content img {
     max-width:300px;
   }
 
-  #maincarousel .carousel-item img {
+  #mainCarousel .carousel-item img {
     max-width: 400px;
     height: 200px;
   }
@@ -185,14 +201,18 @@ hr {
 }
 }
 
-@media (max-width: 380px) {
-    #main-content img {
-    max-width:200px;
-  }
-  #maincarousel .carousel-item img {
+
+@media screen and (max-width: 380px){
+  #mainCarousel .carousel-item img {
     max-width: 300px;
     height: 150px;
   }
+  #main-content h1 {
+  font-size: 20px; 
+}
+  #map {
+  width: 300px;
+}
 }
 
 

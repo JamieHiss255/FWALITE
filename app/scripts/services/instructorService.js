@@ -1,4 +1,6 @@
-﻿angular.module('fwAerial')
+﻿'use strict';
+
+angular.module('fwAerial')
     .factory('instructorService', ['$http', '$q', instructorService]);
 
 function instructorService($http, $q) {

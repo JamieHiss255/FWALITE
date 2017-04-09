@@ -2,6 +2,13 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: url('../app/images/backgroundpattern1.jpg');
+  overflow-x:hidden; 
+}
+
+hr {
+  border-style:dashed;  
+  width: 85%;
+  border-width:1px;
 }
 
 
@@ -10,7 +17,8 @@
 
 
 #carousel-holder {
-  background: linear-gradient(to right, #24123d, #703bb5);
+  background: linear-gradient(to right, #24123d, #412070);
+    overflow-x:hidden; 
 }
 
 #left-blurb {
@@ -18,7 +26,7 @@
 }
 
 #main-content {
-  background-color: mediumpurple;
+  background-color: #7d49c6;
 }
 
   #main-content h1 {
@@ -37,7 +45,25 @@
     border-style: solid;
     border-width: 5px;
     border-color: #282828;
+    max-width:800px;
   }
+
+  #main-content li {
+    color: #d8c5e5;
+  }
+
+  #instructor-list .card-deck{
+      background-color:#282828;
+  }
+
+    #instructor-list .card{
+      background-color:#282828;
+  }
+
+      #instructor-list .card-title{
+      color:white;
+  }
+
 
 
 
@@ -51,7 +77,7 @@
 }
 
   #footer img {
-    max-width: 15%;
+    max-width: 285px;
     height: auto;
   }
 
@@ -74,7 +100,13 @@
 
 #map {
   height: 300px;
-  width: 300px;
+  width: 600px;
+  border-style: solid;
+  overflow:hidden;
+}
+
+#mbo-mobile-apps{
+  display:none;  
 }
 
 /*hiding facebook blurb*/
@@ -83,6 +115,28 @@
     display: none;
   }
 
+}
+
+@media (max-width: 1200px) {
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+  #mainCarousel .carousel-item img {
+    max-width: 800px;
+    height:400px;
+  }
+
+    #main-content img {
+    max-width:500px;
+  }
+  #map {
+  width: 400px;
+}
 }
 
 /*tablets*/
@@ -100,15 +154,44 @@
     height:400px;
   }
 
+    #main-content img {
+    max-width:400px;
+  }
+
+  #mbo-mobile-apps{
+  display:block;  
+}
+
 
 }
 
 /*phones*/
 @media (max-width: 480px) {
+#main-content h1 {
+  font-size: 25px; 
+}
+
+    #main-content img {
+    max-width:300px;
+  }
 
   #maincarousel .carousel-item img {
     max-width: 400px;
     height: 200px;
+  }
+
+  #map {
+  width: 300px;
+}
+}
+
+@media (max-width: 380px) {
+    #main-content img {
+    max-width:200px;
+  }
+  #maincarousel .carousel-item img {
+    max-width: 300px;
+    height: 150px;
   }
 }
 

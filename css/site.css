@@ -1,0 +1,116 @@
+﻿body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url('../app/images/backgroundpattern1.jpg');
+}
+
+
+.mainCarouselImage {
+}
+
+
+#carousel-holder {
+  background: linear-gradient(to right, #24123d, #703bb5);
+}
+
+#left-blurb {
+  background-color: #282828;
+}
+
+#main-content {
+  background-color: mediumpurple;
+}
+
+  #main-content h1 {
+    color: white;
+  }
+
+  #main-content .header-container {
+    background-color: #282828;
+  }
+
+  #main-content p {
+    color: #d8c5e5;
+  }
+
+  #main-content img {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #282828;
+  }
+
+
+
+.class-description {
+}
+
+#footer {
+  background-color: #282828;
+  color: #FFFFFF;
+  min-height: 200px;
+}
+
+  #footer img {
+    max-width: 15%;
+    height: auto;
+  }
+
+.btn-default {
+  background-color: #282828;
+  color: #d8c5e5;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+#map {
+  height: 300px;
+  width: 300px;
+}
+
+/*hiding facebook blurb*/
+@media (max-width: 1500px) {
+  #left-blurb {
+    display: none;
+  }
+
+}
+
+/*tablets*/
+@media (max-width: 768px) {
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+  #mainCarousel .carousel-item img {
+    max-width: 800px;
+    height:400px;
+  }
+
+
+}
+
+/*phones*/
+@media (max-width: 480px) {
+
+  #maincarousel .carousel-item img {
+    max-width: 400px;
+    height: 200px;
+  }
+}
+
+
+

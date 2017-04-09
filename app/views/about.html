@@ -1,0 +1,38 @@
+﻿<div class="container-fluid clearfix">
+    <div class="header-container row rounded-top p-2 pl-5">
+        <h1>About Fort Wayne Aerial</h1>
+    </div>
+    <div class="p-2">
+    <p>
+        Fort Wayne Aerila is the Fort Wayne area’s premiere pole dance and aerial fitness studio located in Fort Wayne, inside the Westland Mall off of Getz Road!
+        <br />Our staff is dedicated to giving you the best pole dance and aerial instruction the industry has to offer. We feel it is very important for women (and men!) to step away from their busy lives and take time to reconnect with their expressive side. In class we do not dwell on our past, we do not worry about our future, we learn to live in our moment and become the sensual being that lives inside all of us.
+        <br />We will be offering series classes with mini choreographed routines, as well as a variety of specialty classes, workshops and fun studio field trips! We are excited to continue participating in a number of community events and expo’s and to bring pole dance and aerial training back to Fort Wayne in a way you've never seen before.
+        <br />It is also important for us here at Fort Wayne Aerial to express our appreciation for life and the opportunities we have had. We will be giving back to our community through volunteer work and charity donations!
+        <br />We welcome new students taking their first pole class, as well as those who have previous experience! Come down to Fort Wayne Aerial and join in on Fort Wayne’s HOTTEST new fitness craze!
+    </p>
+    <hr />
+    <h4>
+      Our Instructors
+    </h4>
+      <div class="container">
+        <div data-ng-repeat="instructor in vm.instructors">
+          <div class="col-md-6">
+            <div class="card-deck mt-5">
+              <div class="card text-left">
+                <img class="card-img-top rounded thumbnail float-right" ng-src="{{instructor.picture}}" />
+                <div class="card-block">
+                  <h4 class="card-title">{{instructor.name}}</h4>
+                  <p class="card-text">
+                    {{instructor.bio}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+</div>
+
+
+

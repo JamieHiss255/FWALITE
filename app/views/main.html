@@ -1,0 +1,29 @@
+﻿  <div style="background-color:#282828;" class="rounded-top p-2 pl-5">
+    <h1 style="color:white">Welcome to Fort Wayne Aerial</h1>
+  </div>
+  <div class="p-2">
+    <div class="">
+      <img style="max-width:20%" class="rounded float-right m-2 thumbnail" src="/app/images/poletrick1.jpg" />
+    </div>
+    <p class="p-3">Fort Wayne Aerial brings the hottest trend in fitness to Fort Wayne. 
+      We bring the aerial arts to you with a focus in fitness and expression. Browse our class descriptions and schedules to join our aerial family today!
+    </p>
+    <div id="map">
+    </div>
+  </div>
+<script>
+  function initMap() {
+    var uluru = { lat: 41.058602, lng: -85.219905 };
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 16,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqXQ1v61vewyIiBNUAxdmftaAO3eX8hQQ&callback=initMap">
+</script>

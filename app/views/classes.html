@@ -1,0 +1,15 @@
+﻿<div class="container-fluid clearfix">
+    <div class="header-container row rounded-top p-2 pl-5">
+      <h1>Our Classes</h1>
+    </div>
+    <div class="p-2">
+      <div class="float-right"><button class="btn btn-default" onclick="location.href = 'https://clients.mindbodyonline.com/classic/mainclass';">View Schedule</button></div>
+      <div class="class-description row mb-1 p-1" data-ng-repeat="class in vm.classes">
+          <div class="col-9">
+              <h4>{{class.name}}</h4>
+              <p>{{class.description}}</p>
+              <hr />
+          </div>
+      </div>
+    </div>
+</div>

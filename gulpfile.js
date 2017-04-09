@@ -10,12 +10,12 @@ var wiredep = require('wiredep').stream;
 var runSequence = require('run-sequence');
 
 var yeoman = {
-  app: require('./bower.json').appPath || '../FWALITE/',
+  app: require('./bower.json').appPath || 'app',
   dist: 'dist'
 };
 
 var paths = {
-  scripts: [yeoman.app + '/scripts/app.js', yeoman.app + '/scripts/**/*.js' ],
+  scripts: [yeoman.app + '/scripts/**/*.js' ],
   styles: [yeoman.app + '/styles/**/*.scss'],
   test: ['test/spec/**/*.js'],
   testRequire: [
@@ -30,7 +30,7 @@ var paths = {
   ],
   karma: 'karma.conf.js',
   views: {
-    main: '/index.html',
+    main: yeoman.app + '/index.html',
     files: [yeoman.app + '/views/**/*.html']
   }
 };

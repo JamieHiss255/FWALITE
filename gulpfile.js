@@ -15,7 +15,7 @@ var yeoman = {
 };
 
 var paths = {
-  scripts: [yeoman.app + '/scripts/**/*.js'],
+  scripts: [yeoman.app + '/scripts/**/*.js' ],
   styles: [yeoman.app + '/styles/**/*.scss'],
   test: ['test/spec/**/*.js'],
   testRequire: [
@@ -26,7 +26,7 @@ var paths = {
     yeoman.app + '/bower_components/angular-sanitize/angular-sanitize.js',
     yeoman.app + '/bower_components/angular-route/angular-route.js',
     'test/mock/**/*.js',
-    'test/spec/**/*.js'
+    'test/spec/**/*.js' 
   ],
   karma: 'karma.conf.js',
   views: {

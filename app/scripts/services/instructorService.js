@@ -24,7 +24,7 @@ function instructorService($http, $q) {
 
     function getTemporaryInstructors() {
         return [
-            { name: "Danielle Violet", bio: "danielles bio here", picture: "/app/images/image3.jpg"},
+            { name: "Danielle Violet Carroll", bio: "danielles bio here", picture: "/app/images/image3.jpg"},
             { name: "Karri Duhaime", bio: "karris bio here", picture: "/app/images/image3.jpg"},
             { name: "Ernesto Lea Place", bio: "ernestos bio here", picture: "/app/images/image3.jpg"},
             { name: "Julia Martinez", bio: "julias bio here", picture: "/app/images/image3.jpg"},

@@ -1,31 +1,39 @@
 ﻿<div class="container-fluid clearfix">
-    <div class="header-container row rounded-top p-2 pl-5">
-      <h1>Our Classes</h1>
+    <div class="header-container row rounded-top p-2 pl-3">
+        <h1>Our Classes</h1>
     </div>
     <div class="p-2">
         <p class="lead">Ready to dive into the world of Aerial Fitness?</p>
-                    <div class="">
+        <div class="">
             <img class="rounded m-2 thumbnail mx-auto d-block" src="/app/images/large/aerialsilks2_lg.jpg" />
-            </div>
-            <p>We offer a variety of classes for pole, aerial, dance and even conditioning and flexibility! Take a look at the descriptions of our classes below and see what inspires you.</p>
-            <p>Please take note that our leveled (non-introductory) and specialized choreography classes require a class package to in order to sign-up; there are no drop-ins for these classes! Classes that allow drop-ins are signified below with an * astrisk.</p>
-            <p class="text-center">To sign up for our classes, purchase packages, or get a full view of our schedule for this session, please take a look at our MINDBODY page by clicking the button below.</p>
-            <img class="mx-auto d-block mb-2" style="border:none;" ng-click="vm.navigateToMindBody()" src="/app/images/API-download-white.png"/>
-      <button class="btn btn-default mx-auto d-block mb-1" ng-click="vm.navigateToMindBody()">Sign up for our classes on MINDBODY!</button>
-      <hr />
-      <div class="class-description mb-1 p-1" data-ng-repeat="class in vm.classes">
-          <div class="col-12 col-md-9 mx-auto d-block">
-          <div class="card">
-            <div class="card-header text-center">
-               <h5>{{class.name}}</h5>
-            </div>
-            <div class="card-block">
-                <p class="card-text">{{class.description}}</p>
-            </div>
+        </div>
+        <p>We offer a variety of classes for pole, aerial, dance and even conditioning and flexibility! Take a look at the descriptions
+            of our classes below and see what inspires you.</p>
+        <p>Please take note that our leveled (non-introductory) and specialized choreography classes require a class package
+            to in order to sign-up; there are no drop-ins for these classes! Classes that allow drop-ins are signified below
+            with an * astrisk.</p>
+        <div class="mx-auto d-block mb-1 mt-2 text-center" aria-hidden="true">&bull;&bull;&bull;</div>
+        <p class="text-center font-weight-bold">To sign up for our classes, purchase packages, or get a full view of our schedule for this session, please take a
+            look at our MINDBODY page by clicking the button below.</p>
+        <img class="mx-auto d-block mb-2" style="border:none;" ng-click="vm.navigateToMindBody()" src="/app/images/API-download-white.png"
+        />
+        <div class="text-center mx-auto">
+            <a class="btn btn-primary mx-auto mb-1" href="https://clients.mindbodyonline.com/classic/ws?studioid=854204&stype=-7&sView=week&sLoc=0">Visit us on MINDBODY!</a>
         </div>
         <div class="mx-auto d-block mb-1 mt-2 text-center" aria-hidden="true">&bull;&bull;&bull;</div>
+        <div class="class-description mb-1 p-1" data-ng-repeat="class in vm.classes">
+            <div class="col-12 col-md-9 mx-auto d-block">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h5>{{class.name}}</h5>
+                    </div>
+                    <div class="card-block">
+                        <p class="card-text">{{class.description}}</p>
+                    </div>
+                </div>
+                <div class="mx-auto d-block mb-1 mt-2 text-center" aria-hidden="true">&bull;&bull;&bull;</div>
 
+            </div>
         </div>
-      </div>
     </div>
 </div>

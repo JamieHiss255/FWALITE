@@ -22,7 +22,7 @@ hr {
 }
 
 #main-content {
-  background-color: #7d49c6;
+  background-color: #8759c6;
 }
     #main-content img {
     max-width:200px;
@@ -37,8 +37,12 @@ hr {
   }
 
   #main-content p {
-    color: #d8c5e5;
+    color: #282828;
   }
+
+  #main-content p.lead{
+  font-weight:500;
+}
 
   #main-content img {
     border-style: solid;
@@ -47,7 +51,7 @@ hr {
   }
 
   #main-content li {
-    color: #d8c5e5;
+    color: #282828;
   }
 
   #main-content .class-description p{
@@ -82,14 +86,26 @@ hr {
     height: auto;
   }
 
-.btn-default {
+.btn-primary {
   background-color: #282828;
   color: #d8c5e5;
-  cursor:pointer;
+  border-color:white; 
 }
 
-.btn-default:hover {
+.btn-primary:hover {
   color:white;
+  background-color:#24123d;
+}
+
+.btn-secondary{
+  background-color:#412070;
+  color:#d8c5e5;
+}
+
+.btn-secondary:hover{
+  background-color:#24123d;
+  color:white; 
+  
 }
 
 .fa {

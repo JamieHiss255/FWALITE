@@ -1,31 +1,38 @@
-﻿  <div style="background-color:#282828;" class="rounded-top p-2 pl-5">
-    <h1>Welcome to Fort Wayne Aerial</h1>
-  </div>
-  <div class="p-2">
-    <p class="lead">Ready to try a new way to get fit?</p>
-    <div class="">
-      <img class="rounded m-2 thumbnail mx-auto d-block" src="/app/images/large/daniellepole1_lg.jpg" />
-    </div>
-    <p class="p-3">Fort Wayne Aerial brings the hottest trend in fitness to Fort Wayne. 
-      We bring the aerial arts to you with a focus in fitness and expression. Browse our class descriptions and schedules to join our aerial family today!
-    </p>
-    <p class="p-3 text-center">
-      Our class scheduling and purchasing is handled through MINDBODY. To take a look at our current class schedule or sign up for a class, please visit our MINDBODY site. 
-    </p>
-     <img class="mx-auto d-block mb-2" ng-click="vm.navigateToMindBody()" style="border:none;" src="/app/images/API-download-white.png"/>
-      <button class="btn btn-default mx-auto d-block mb-1" ng-click="vm.navigateToMindBody()">Sign up for our classes on MINDBODY!</button>
-    <hr />
+﻿<div style="background-color:#282828;" class="rounded-top p-2 pl-3">
+  <h1>Welcome to Fort Wayne Aerial</h1>
 </div>
-    </div> 
-    <div class="mx-auto d-block mb-4 p-3"> 
-          <p class="text-center">Fort Wayne Aerial can be found inside the Westland Centre, behind Umi Restaurant, off of W. Jefferson Blvd and Getz Rd in Fort Wayne, Indiana.</p>
-    <p class="text-center">6123 West Jefferson Blvd, Fort Wayne, IN 46804</p>    
-    <div id="map" class="mb-2 rounded border-1 mx-auto d-block">
-    </div>
-      <h3 class="text-center">Come visit us today!</h3>     
-    </div>
-    
+<div class="p-2">
+  <p class="lead">Ready to try a new way to get fit?</p>
+  <div class="">
+    <img class="rounded m-2 thumbnail mx-auto d-block" src="/app/images/large/daniellepole1_lg.jpg" />
   </div>
+  <p class="p-3">Fort Wayne Aerial brings the hottest trend in fitness to Fort Wayne. We bring the aerial arts to you with a focus in fitness
+    and expression. Browse our class descriptions and schedules to join our aerial family today!
+  </p>
+  <div class="mx-auto d-block mb-1 mt-2 text-center" aria-hidden="true">&bull;&bull;&bull;</div>
+  <p class="p-3 text-center">
+    Our class scheduling and purchasing is handled through MINDBODY. <b>To take a look at our current class schedule or sign up
+    for a class, please visit our MINDBODY site.</b>
+  </p>
+  <img class="mx-auto d-block mb-2" ng-click="vm.navigateToMindBody()" style="border:none;" src="/app/images/API-download-white.png"
+  />
+  <div class="text-center mx-auto">
+    <a class="btn btn-primary mx-auto mb-1" href="https://clients.mindbodyonline.com/classic/ws?studioid=854204&stype=-7&sView=week&sLoc=0">Visit us on MINDBODY!</a>
+  </div>
+  <div class="mx-auto d-block mb-1 mt-2 text-center" aria-hidden="true">&bull;&bull;&bull;</div>
+
+</div>
+<div class="mx-auto d-block mb-4 p-3">
+  <p class="text-center">Fort Wayne Aerial can be found inside the Westland Centre, behind Umi Restaurant, off of W. Jefferson Blvd and Getz Rd
+    in Fort Wayne, Indiana.</p>
+
+  <div id="map" class="mb-2 rounded border-1 mx-auto d-block">
+  </div>
+  <h3 class="text-center">Come visit us today!</h3>
+  <p class="text-center">6123 West Jefferson Blvd, Fort Wayne, IN 46804</p>
+</div>
+
+</div>
 <script>
   function initMap() {
     var uluru = { lat: 41.058602, lng: -85.219905 };
@@ -38,7 +45,8 @@
       map: map
     });
   }
+
 </script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqXQ1v61vewyIiBNUAxdmftaAO3eX8hQQ&callback=initMap">
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqXQ1v61vewyIiBNUAxdmftaAO3eX8hQQ&callback=initMap">
+
 </script>
